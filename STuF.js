@@ -1,13 +1,8 @@
-//github.com/stuffyerface/STuF
-
-// Rules:
-// Prefix with l$
-// Replace http:// with h and https:// with H
-// Follow with 0 for other, 1 for png, 2 for jpg, 3 forjpeg, 4 for gif 
-// in the remaining string, get index of "." <= 9 and add indices as ints followed by |
-// The rest of the string is shifted by one character
-
-
+// This project uses STuF v1.0
+// to encode and decode links.
+// 
+// Info and lisences:
+// github.com/stuffyerface/STuF
 
 function stufDecode(encoded) {
   if (!encoded.startsWith('l$')) {
@@ -24,20 +19,16 @@ function stufDecode(encoded) {
   let url = first9 + then;
   url = charInc(url,-1)
 
-  // Restore the dots in the first part of the URL
-  console.log(dotIndices)
   dotIndices.forEach((index) => {
     url = url.slice(0, index) + '.' + url.slice(index);
   });
 
-  // Add the prefix back
   if (prefix === 'h') {
     url = 'http://' + url;
   } else if (prefix === 'H') {
     url = 'https://' + url;
   }
 
-  // Add the suffix back
   if (suffix === '1') {
     url += '.png';
   } else if (suffix === '2') {
@@ -55,24 +46,24 @@ function stufEncode(url) {
   let encoded = "l$"
   if (url.startsWith('http://')) {
     encoded += 'h';
-    url = url.slice(7); // Remove the 'http://' part
+    url = url.slice(7);
   } else if (url.startsWith('https://')) {
     encoded += 'H';
-    url = url.slice(8); // Remove the 'https://' part
+    url = url.slice(8);
   }
 
   if (url.endsWith('.png')) {
     encoded += '1';
-    url = url.slice(0, -4); // Remove the '.png' part
+    url = url.slice(0, -4);
   } else if (url.endsWith('.jpg')) {
     encoded += '2';
-    url = url.slice(0, -4); // Remove the '.jpg' part
+    url = url.slice(0, -4);
   } else if (url.endsWith('.jpeg')) {
     encoded += '3';
-    url = url.slice(0, -5); // Remove the '.jpeg' part
+    url = url.slice(0, -5);
   } else if (url.endsWith('.gif')) {
     encoded += '4';
-    url = url.slice(0, -4); // Remove the '.gif' part
+    url = url.slice(0, -4);
   } else {
     encoded += '0';
   }
@@ -81,7 +72,7 @@ function stufEncode(url) {
   for (let i = 0; (i < url.length) && (i <= 9); i++) {
     if (url[i] === '.') {
       dotIndices.push(i);
-      if (dotIndices.length === 9) break; // Stop after 9 dots
+      if (dotIndices.length === 9) break;
     }
   }
 
@@ -105,11 +96,9 @@ function charInc(str, int) {
     let index = charSet.indexOf(char);
 
     if (index !== -1) {
-      // Get the next character in the set, wrap around using modulo operator
       let nextChar = charSet[(index + int) % charSet.length];
       incrementedStr += nextChar;
     } else {
-      // If the character is not in the set, keep it unchanged
       incrementedStr += char;
     }
   }
