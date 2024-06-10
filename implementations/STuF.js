@@ -1,7 +1,7 @@
 // This project uses STuF v1.0
 // to encode and decode links.
 // 
-// Info and lisences:
+// Info and licenses:
 // github.com/stuffyerface/STuF
 
 function stufDecode(encoded) {

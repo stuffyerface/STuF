@@ -54,7 +54,7 @@ Currently planned implementations are the following
 - [ImageLinkFix](https://www.chattriggers.com/modules/v/ImageLinkFix) by [Stuffy](https://github.com/stuffyerface)  
 
 # Lisence  
-
+**STuF** operates under a modified version of the [MIT Lisence](https://choosealicense.com/licenses/mit/)
 See [Lisence](LISENCE.md)  
 
 # Version  
