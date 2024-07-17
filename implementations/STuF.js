@@ -79,7 +79,7 @@ export default class STuFLib {
     }
 
     let dotIndices = [];
-    for (let i = 0; (i < url.length) && (i <= 9); i++) {
+    for (let i = 0; (i < url.length) && (i <= 8); i++) {
       if (url[i] === '.') {
         dotIndices.push(i);
         if (dotIndices.length === 9) break; // Stop after 9 dots
@@ -106,13 +106,18 @@ function charInc(str, int) {
     let char = str[i];
     let index = charSet.indexOf(char);
 
-    if (index !== -1) {
-      // Get the next character in the set, wrap around using modulo operator
-      let nextChar = charSet[(index + int) % charSet.length];
-      incrementedStr += nextChar;
-    } else {
-      // If the character is not in the set, keep it unchanged
+    if (index == -1) {
       incrementedStr += char;
+    } else {
+      let offset = index + int
+      while(offset >= charSet.length){
+        offset -= charSet.length
+      }
+      while(offset < 0){
+        offset += charSet.length
+      }
+      let nextChar = charSet[offset];
+      incrementedStr += nextChar;
     }
   }
   return incrementedStr;
