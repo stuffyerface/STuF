@@ -53,7 +53,7 @@ Currently planned implementations are the following
 # Applications Using **STuF**  
 - [ImageLinkFix](https://www.chattriggers.com/modules/v/ImageLinkFix) by [Stuffy](https://github.com/stuffyerface)  
 - [STuFLib](https://www.chattriggers.com/modules/v/STuFLib) by [Stuffy](https://github.com/stuffyerface)  
-- [TempestBridge] (https://www.chattriggers.com/modules/v/TempestBridge) by [Azael](https://github.com/AzaelMew)  
+- [TempestBridge](https://www.chattriggers.com/modules/v/TempestBridge) by [Azael](https://github.com/AzaelMew)  
 
 # License  
 **STuF** operates under a modified version of the [MIT License](https://choosealicense.com/licenses/mit/)
