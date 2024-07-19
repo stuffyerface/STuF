@@ -9,7 +9,7 @@ Standardized Truncated url Format (**STuF**) is a url conversion format that sho
 1. [The Purpose](README.md#the-purpose)  
 2. [Supported Languages](README.md#supported-languages)  
 3. [Applications Using **STuF**](README.md#applications-using-stuf)  
-4. [Lisence](README.md#lisence)  
+4. [License](README.md#License)  
 4. [Version](README.md#version)  
 
 ## The Purpose  
@@ -40,7 +40,7 @@ Shift all characters following the "|" buy 1 index along the string "abcdefghijk
 # Supported Languages  
 
 Currently supported languages are listed below  
-- [Javascript](/implementations/STuF.js)  
+- [Javascript](/implementations/Javascript/package)  
 
 Currently planned implementations are the following  
 - [Python3](/implementations/STuF.py)  
@@ -52,6 +52,8 @@ Currently planned implementations are the following
 
 # Applications Using **STuF**  
 - [ImageLinkFix](https://www.chattriggers.com/modules/v/ImageLinkFix) by [Stuffy](https://github.com/stuffyerface)  
+- [STuFLib](https://www.chattriggers.com/modules/v/STuFLib) by [Stuffy](https://github.com/stuffyerface)  
+- [TempestBridge] (https://www.chattriggers.com/modules/v/TempestBridge) by [Azael](https://github.com/AzaelMew)  
 
 # License  
 **STuF** operates under a modified version of the [MIT License](https://choosealicense.com/licenses/mit/)
@@ -60,4 +62,3 @@ See [License](LICENSE.md)
 # Version  
 
 Current Version: **1.0.0**  
-Changelog can be found [here](CHANGELOG.md).  
