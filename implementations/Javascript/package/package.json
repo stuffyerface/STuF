@@ -1,6 +1,6 @@
 {
   "name": "stuf",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Standardized Truncated url Format (STuF) is a url conversion format that shortens and obfuscates strings with a public encryption method.",
   "main": "index.js",
   "author": "Stuffy",
