@@ -1,0 +1,22 @@
+{
+  "name": "stuf",
+  "version": "1.0.0",
+  "description": "STuF (Standardized Truncated url Format) is .",
+  "main": "index.js",
+  "author": "Stuffy",
+  "repository": "https://github.com/stuffyerface/STuF",
+  "keywords": [
+    "STuF",
+    "Encode",
+    "Decode",
+    "URL"
+  ],
+  "scripts": {
+    "test":  "echo \"Error: no test specified\" && exit 1"
+  },
+  "bugs": {
+    "url": "https://github.com/stuffyerface/STuF/issues"
+  },
+  "homepage": "https://github.com/stuffyerface/STuF#readme",
+  "license": "SEE LICENSE IN https://github.com/stuffyerface/STuF?tab=License-1-ov-file"
+}

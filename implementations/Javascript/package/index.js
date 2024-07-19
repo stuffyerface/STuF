@@ -2,7 +2,7 @@
 // https://github.com/stuffyerface/STuF
 
 
-export default class STuFLib {
+class STuF {
   /**
    * Decodes a string in Standardized Truncated url Format.
    * @param {String} string - The String to Decode.
@@ -121,4 +121,8 @@ function charInc(str, int) {
     }
   }
   return incrementedStr;
+}
+
+module.exports = {
+  STuF
 }
