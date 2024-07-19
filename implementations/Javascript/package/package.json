@@ -1,6 +1,6 @@
 {
   "name": "stuf",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "STuF (Standardized Truncated url Format) is .",
   "main": "index.js",
   "author": "Stuffy",
@@ -12,7 +12,7 @@
     "URL"
   ],
   "scripts": {
-    "test":  "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "bugs": {
     "url": "https://github.com/stuffyerface/STuF/issues"
