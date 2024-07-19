@@ -40,7 +40,7 @@ Shift all characters following the "|" by 1 index along the string "abcdefghijkl
 # Supported Languages  
 
 Currently supported languages are listed below  
-- [Javascript](/implementations/Javascript/package)  
+- [Javascript](/implementations/Javascript/package)  npm package [here](https://www.npmjs.com/package/stuf).
 
 Currently planned implementations are the following  
 - [Python3](/implementations/STuF.py)  
