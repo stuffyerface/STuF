@@ -34,7 +34,7 @@ Next character is "h" if link begins with "http://" or "H" if link begins with "
 If there is a .png, .jpg, .jpeg, or .gif file extension, append 1-4 accordingly, otherwise append 0
 In the remaining characters of the url, tally the indices of all "." characters within the first 10 indices, and append it to the string, followed by "|" and remove them from the string
 Replace all subsequent "." characters with "^"
-Shift all characters following the "|" buy 1 index along the string "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
+Shift all characters following the "|" by 1 index along the string "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
 ```
 
 # Supported Languages  

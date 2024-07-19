@@ -12,7 +12,7 @@ STuF allows users to share shortened, obfuscated links directly without relying 
 
 - Converts links into shorter, obfuscated strings.
 - Supports HTTP and HTTPS links with immediate domain recognition.
-- Workds offline without the need for external redirection
+- Works offline without the need for external redirection
 - Preserves link integrity
 
 ## Usage
