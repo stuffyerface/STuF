@@ -1,5 +1,8 @@
 # Standardized Truncated url Format  
 
+![NPM Downloads](https://img.shields.io/npm/d18m/stuf?label=npm%20downloads)
+
+
 Copyright © Stuffy 2024 All rights reserved.  
 
 Standardized Truncated url Format (**STuF**) is a url conversion format that shortens and obfuscates strings.  
